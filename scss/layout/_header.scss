@@ -1,0 +1,28 @@
+.header{
+    background-image: url(../../assets/img/fondo-bbad.jpg);
+    background-position: center;
+    background-size: cover;
+
+    color:white;
+    font-size: 1.1rem;
+    padding: 15px;
+    width: 100%;
+
+    grid-area: header;
+    &__title{
+        text-align: center;
+        padding: 10px;
+    }
+    &__nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    @include mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__nav{
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.contenedor-inicio{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.contenedor-registro{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+@include mobile{
+    .main-login{
+        height: 80vh;
+        display: flex;
+        justify-content: space-around;
+    }
+}

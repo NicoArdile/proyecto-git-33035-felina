@@ -1,0 +1,256 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  padding-bottom: 5px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.footer {
+  background-image: url(../../assets/img/fondo-bbad.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  font-size: 1.4rem;
+  grid-area: footer;
+}
+
+.categorias {
+  width: 200px;
+  background-color: rgb(15, 114, 64);
+  grid-area: categorias;
+}
+
+.header {
+  background-image: url(../../assets/img/fondo-bbad.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 1.1rem;
+  padding: 15px;
+  width: 100%;
+  grid-area: header;
+}
+.header__title {
+  text-align: center;
+  padding: 10px;
+}
+.header__nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__nav {
+    width: 50%;
+  }
+}
+
+body {
+  background-image: url(../../assets/img/cuerpo-felina.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.boton {
+  background-color: rgb(15, 114, 64);
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+}
+.boton:hover {
+  border: 2px solid rgb(15, 114, 64);
+  background-color: white;
+  color: rgb(15, 114, 64);
+}
+
+.bloque-trucos, .bloque-guias, .bloque-ultimas-noticias, .bloque-reseñas, .bloque-lanzamientos, .bloque-series, .bloque-destacados {
+  background-color: black;
+  width: 50vw;
+  padding: 30px 30px 30px 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+.bloque-destacados {
+  grid-area: destacados;
+}
+
+.bloque-series {
+  grid-area: series;
+}
+
+.bloque-lanzamientos {
+  grid-area: lanzamientos;
+}
+
+.formulario-registro, .formulario-inicio, .trucos, .guias, .ultimas__noticias, .reseñas, .lanzamientos, .series, .destacados {
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 4px solid rgb(15, 114, 64);
+  border-radius: 15px;
+}
+
+.destacados__img {
+  width: 100%;
+}
+.destacados__texto {
+  width: 300px;
+  margin: 10px;
+}
+
+.series__img {
+  width: 100%;
+}
+.series__texto {
+  margin: 10px;
+}
+
+.lanzamientos__img {
+  width: 100%;
+}
+.lanzamientos__texto {
+  margin: 10px;
+}
+
+.reseñas__texto {
+  margin: 10px;
+}
+
+.ultimas__noticias__img {
+  width: 100%;
+}
+.ultimas__noticias__texto {
+  margin: 10px;
+}
+
+.guias__img {
+  width: 100%;
+}
+.guias__texto {
+  padding: 10px;
+}
+.guias__titulo {
+  padding: 5px;
+}
+
+.trucos__img {
+  width: 100%;
+}
+.trucos__texto {
+  padding: 10px;
+}
+.trucos__titulo {
+  padding: 5px;
+}
+
+.destacados__img {
+  width: 100%;
+}
+
+.formulario-inicio {
+  width: 300px;
+  height: 300px;
+  grid-area: inicio;
+}
+
+.formulario-registro {
+  width: 300px;
+  height: 300px;
+  grid-area: registro;
+}
+
+.contraseña, .email, .username {
+  padding-bottom: 20px;
+}
+
+.main-foros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-index {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat 3, auto;
+  grid-template-areas: "categorias destacados destacados" "categorias series series" "categorias lanzamientos lanzamientos";
+}
+
+.body-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.main-noticias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-trucosguias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.contenedor-trucos {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.contenedor-guias {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.contenedor-inicio {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.contenedor-registro {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .main-login {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

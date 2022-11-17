@@ -1,0 +1,11 @@
+.boton{
+    background-color: $color-primario;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    &:hover{
+        border: $border2;
+        background-color: white;
+        color: $color-primario;
+    }
+}
